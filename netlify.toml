@@ -1,6 +1,17 @@
 [build]
   publish = "."
 
+# Avoid stale CSS after deploys (browsers/CDN cache same URL aggressively)
+[[headers]]
+  for = "/styles/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 [[redirects]]
   from = "/wp-admin/*"
   to = "/404.html"
