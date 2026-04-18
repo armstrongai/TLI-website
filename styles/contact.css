@@ -1,0 +1,40 @@
+/* Contact page */
+
+.contact-grid {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.contact-panel {
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  background: var(--tli-white);
+}
+
+.contact-panel h2 {
+  margin-bottom: 8px;
+}
+
+.contact-panel > p {
+  color: var(--tli-text-mid);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.note-box {
+  font-size: 14px;
+  color: var(--tli-text-mid);
+  background: var(--tli-bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--tli-gold);
+}

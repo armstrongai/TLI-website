@@ -1,0 +1,31 @@
+/* Contract services page */
+
+.service-block {
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  background: var(--tli-white);
+}
+
+.service-block h3 {
+  color: var(--tli-green);
+  margin-bottom: 8px;
+}
+
+.service-block p {
+  color: var(--tli-text-mid);
+  font-size: 15px;
+  margin: 0;
+}
+
+.two-col {
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 900px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}

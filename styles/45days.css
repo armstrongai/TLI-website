@@ -1,0 +1,9 @@
+/* 45Days product page */
+
+.highlight-box {
+  border-left: 4px solid var(--tli-gold);
+  padding: 16px 20px;
+  background: var(--tli-bg-secondary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 24px;
+}

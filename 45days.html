@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>45Days: Texas evaluation timelines | The Learning Index</title>
+    <meta
+      name="description"
+      content="ARD and evaluation timeline clarity built for Texas diagnosticians. Join the waitlist for 45Days."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/45days.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">45Days · Texas</span>
+          <h1>Timelines that don’t <span class="text-gold">quietly</span> slip.</h1>
+          <p>
+            45Days is for Texas teams who need ARD and evaluation deadlines visible in one place, not scattered
+            across sticky notes, spreadsheets, and prayer.
+          </p>
+          <div class="hero-actions">
+            <a href="#waitlist" class="btn btn--primary">Join the waitlist</a>
+            <a href="redact-ai.html#trial" class="btn btn--ghost">Try Redact AI Free</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <h2>What it tracks</h2>
+          <ul class="list-check">
+            <li><strong>ARD timelines:</strong> Know what’s coming before it becomes an apology email.</li>
+            <li><strong>Evaluation deadlines:</strong> See pressure points across your caseload, not just the loudest file.</li>
+            <li><strong>Caseload overview:</strong> A practitioner-shaped snapshot instead of a district chart that lies.</li>
+          </ul>
+          <div class="highlight-box">
+            <p class="small" style="margin: 0">
+              <strong>Pricing:</strong> TBD as we finish pilot feedback. Waitlist members hear first, and we won’t
+              spam you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--secondary">
+        <div class="container">
+          <h2>Who it’s for</h2>
+          <p style="max-width: 40rem">
+            Texas diagnosticians carrying evaluation timelines in your head deserve software that speaks your
+            language, not a generic task app dressed up in school colors.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="waitlist">
+        <div class="container">
+          <h2>Get notified</h2>
+          <p style="max-width: 36rem; margin-bottom: 20px">We’ll email you when 45Days opens more broadly.</p>
+          <form name="45days-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 420px">
+            <input type="hidden" name="form-name" value="45days-waitlist" />
+            <p class="sr-only">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fd-name">Name</label>
+                <input id="fd-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="fd-email">Work email</label>
+                <input id="fd-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="fd-role">Role</label>
+                <input id="fd-role" name="role" type="text" placeholder="e.g., LSSP, Diagnostician" />
+              </div>
+              <button type="submit" class="btn btn--primary">Join waitlist</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--dark cta-band">
+        <div class="container">
+          <h2>While you wait, try Redact AI free</h2>
+          <p>Seven days, no card. See if safer AI workflows buy back your evenings.</p>
+          <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

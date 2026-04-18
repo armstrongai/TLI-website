@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources for SPED professionals | The Learning Index</title>
+    <meta
+      name="description"
+      content="Articles and resources on FERPA-safe AI, evaluation workflows, and SPED practice from practitioners in the field."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/blog.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">Blog &amp; resources</span>
+          <h1>Resources for <span class="text-gold">SPED</span> professionals.</h1>
+          <p>
+            Plain-language writing from people who still sign evaluation reports, not a content farm guessing at your
+            job title.
+          </p>
+          <div class="hero-actions">
+            <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+            <a href="#optin" class="btn btn--ghost">Email updates</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="sr-only">Featured article</h2>
+          <article class="featured-post">
+            <div>
+              <span class="tag">Featured · AI &amp; privacy</span>
+              <h3>Before you paste an evaluation into AI, read this</h3>
+              <p class="post-meta">March 2026 · 8 min read</p>
+            </div>
+            <div>
+              <p>
+                A practitioner checklist for what should never leave your draft, what “de-identified” should mean in
+                your hands, and how to talk with your team without sounding like you’re blocking progress.
+              </p>
+              <span class="btn btn--ghost-dark" style="opacity: 0.65; cursor: default; pointer-events: none"
+                >Full article (coming soon)</span
+              >
+            </div>
+          </article>
+
+          <h2>Latest posts</h2>
+          <div class="post-grid">
+            <article class="post-card">
+              <span class="tag">Texas timelines</span>
+              <h3>When “45 days” stops being theoretical</h3>
+              <p class="post-meta">February 2026</p>
+              <p>What diagnosticians track when the calendar turns hostile, and how software can help without adding noise.</p>
+              <a href="#" aria-disabled="true">Read more</a>
+            </article>
+            <article class="post-card">
+              <span class="tag">Documentation</span>
+              <h3>Writing defensible language teams can actually use</h3>
+              <p class="post-meta">January 2026</p>
+              <p>Less jargon, more clarity, without weakening the story your data tells.</p>
+              <a href="#" aria-disabled="true">Read more</a>
+            </article>
+            <article class="post-card">
+              <span class="tag">Professional learning</span>
+              <h3>What we learned from 50 practitioners in one virtual room</h3>
+              <p class="post-meta">February 2026</p>
+              <p>Takeaways from our latest EVALed conference: honest questions, realistic next steps.</p>
+              <a href="evaled.html">See EVALed</a>
+            </article>
+            <article class="post-card">
+              <span class="tag">Tools</span>
+              <h3>Chromebook reality for itinerant staff</h3>
+              <p class="post-meta">December 2025</p>
+              <p>Why we ship for the devices you actually carry, not the lab machine downtown.</p>
+              <a href="redact-ai.html">Explore Redact AI</a>
+            </article>
+          </div>
+
+          <div class="optin-panel" id="optin">
+            <h2>Get new resources in your inbox</h2>
+            <p>Short emails when we publish something worth your time.</p>
+            <form name="blog-optin" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 480px">
+              <input type="hidden" name="form-name" value="blog-optin" />
+              <p class="sr-only">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="form-grid form-grid--2">
+                <div class="form-field">
+                  <label for="bl-name">Name</label>
+                  <input id="bl-name" name="name" type="text" autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="bl-email">Work email</label>
+                  <input id="bl-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <button type="submit" class="btn btn--primary" style="grid-column: 1 / -1; max-width: 200px">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark cta-band">
+        <div class="container">
+          <h2>Try the tool behind the writing</h2>
+          <p>Redact AI free for seven days. See if it fits next to your spellchecker.</p>
+          <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

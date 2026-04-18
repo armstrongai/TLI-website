@@ -1,0 +1,36 @@
+/* Membership coming soon */
+
+.teaser-grid {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+@media (min-width: 640px) {
+  .teaser-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.teaser-item {
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  background: var(--tli-white);
+}
+
+.teaser-item h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--tli-green);
+}
+
+.price-teaser {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--tli-gold-light);
+  font-weight: 600;
+  color: var(--tli-green-dark);
+}

@@ -1,0 +1,42 @@
+/* About page */
+
+.bio {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .bio {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--tli-green-dark);
+  color: var(--tli-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.bio-text p {
+  color: var(--tli-text-mid);
+}
+
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.link-grid a {
+  font-weight: 500;
+}

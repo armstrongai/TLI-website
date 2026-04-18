@@ -1,0 +1,246 @@
+/* Homepage */
+
+.hero--video {
+  position: relative;
+  min-height: min(88vh, 760px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--tli-green);
+  padding: 0;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    to right,
+    rgba(21, 69, 47, 0.85) 0%,
+    rgba(21, 69, 47, 0.85) 40%,
+    rgba(21, 69, 47, 0.35) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 72px var(--section-pad-x-mobile) 80px;
+  color: var(--tli-white);
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding-left: var(--section-pad-x);
+    padding-right: var(--section-pad-x);
+  }
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(207, 151, 56, 0.2);
+  color: var(--tli-gold);
+  border: 1px solid rgba(207, 151, 56, 0.45);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: var(--tli-white);
+  max-width: 14ch;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    max-width: 18ch;
+  }
+}
+
+.hero-sub {
+  font-size: 1.125rem;
+  max-width: 36rem;
+  opacity: 0.92;
+  margin-bottom: 28px;
+  line-height: 1.65;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.hero-note {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.stats-bar {
+  background: var(--tli-green-dark);
+  color: var(--tli-white);
+  padding: 28px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stats-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+
+.stat-num {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--tli-gold);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 13px;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+#products {
+  scroll-margin-top: 88px;
+}
+
+.products-intro {
+  max-width: 36rem;
+  margin-bottom: 32px;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 15px;
+  color: var(--tli-text-mid);
+  margin-bottom: 16px;
+}
+
+.product-card .badge {
+  margin-bottom: 12px;
+  color: var(--tli-green);
+  background: var(--tli-gold-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.product-card--featured .badge {
+  background: rgba(207, 151, 56, 0.25);
+  color: var(--tli-green-dark);
+}
+
+.pain-head {
+  max-width: 32rem;
+  margin-bottom: 28px;
+}
+
+.pain-item {
+  background: var(--tli-white);
+  border-radius: var(--radius-card);
+  padding: 20px 20px 20px 24px;
+  border: 1px solid var(--tli-border);
+  position: relative;
+}
+
+.pain-item::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tli-gold);
+}
+
+.pain-item h3 {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.pain-item p {
+  padding-left: 16px;
+  color: var(--tli-text-mid);
+  font-size: 15px;
+}
+
+.about-grid {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: auto 1fr;
+    gap: 48px;
+  }
+}
+
+.about-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--tli-green);
+  color: var(--tli-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.about-text h2 {
+  margin-bottom: 12px;
+}
+
+.footer-cta {
+  text-align: center;
+}
+
+.footer-cta h2 {
+  color: var(--tli-white);
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+.footer-cta p {
+  opacity: 0.9;
+  max-width: 36rem;
+  margin: 0 auto 24px;
+}

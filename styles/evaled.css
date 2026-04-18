@@ -1,0 +1,61 @@
+/* EVALed PD page */
+
+.event-card {
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  background: var(--tli-white);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card--featured {
+  border-color: var(--tli-gold);
+  box-shadow: 0 6px 20px rgba(21, 69, 47, 0.08);
+}
+
+.event-meta {
+  font-size: 13px;
+  color: var(--tli-text-mid);
+}
+
+.pill-price {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--tli-gold-light);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--tli-green-dark);
+}
+
+.recap {
+  background: var(--tli-bg-secondary);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  border: 1px solid var(--tli-border);
+}
+
+.diff-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .diff-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.diff-item h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--tli-green);
+}
+
+.diff-item p {
+  font-size: 15px;
+  color: var(--tli-text-mid);
+  margin: 0;
+}

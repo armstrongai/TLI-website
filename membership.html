@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLI Membership: Coming June 2026 | The Learning Index</title>
+    <meta
+      name="description"
+      content="EVALed Pro / TLI Membership is coming in June 2026. Join the waitlist for founding member pricing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/membership.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">Coming June 2026</span>
+          <h1>EVALed Pro is <span class="text-gold">coming</span>: TLI Membership</h1>
+          <p>
+            A single front door for member workshops, tool access, and community with other practitioners who speak
+            your abbreviations without a cheat sheet.
+          </p>
+          <div class="hero-actions">
+            <a href="#waitlist" class="btn btn--primary">Join the membership waitlist</a>
+            <a href="redact-ai.html#trial" class="btn btn--ghost">Try Redact AI Free</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <h2>What we’re planning to include</h2>
+          <p style="max-width: 40rem">Preview only. Details will firm up as we finish pilot conversations.</p>
+          <div class="teaser-grid">
+            <div class="teaser-item">
+              <h3>Member workshops</h3>
+              <p class="small" style="margin: 0; color: var(--tli-text-mid)">
+                Deeper sessions than a one-off webinar, lighter than a university course you don’t have time for.
+              </p>
+            </div>
+            <div class="teaser-item">
+              <h3>Tool access</h3>
+              <p class="small" style="margin: 0; color: var(--tli-text-mid)">
+                A sensible bundle for teams trying to align on safer AI workflows and timeline stress.
+              </p>
+            </div>
+            <div class="teaser-item">
+              <h3>Practitioner community</h3>
+              <p class="small" style="margin: 0; color: var(--tli-text-mid)">
+                Moderated space for questions you don’t want to post in a giant Facebook group.
+              </p>
+            </div>
+          </div>
+          <p class="price-teaser">Founding member teaser: $19/mo when we launch</p>
+        </div>
+      </section>
+
+      <section class="section section--secondary" id="waitlist">
+        <div class="container" style="max-width: 520px">
+          <h2>Get on the list</h2>
+          <p style="margin-bottom: 20px">We’ll only email when there’s something concrete to share.</p>
+          <form name="membership-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="membership-waitlist" />
+            <p class="sr-only">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="mem-name">Name</label>
+                <input id="mem-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="mem-email">Work email</label>
+                <input id="mem-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="mem-role">Role</label>
+                <input id="mem-role" name="role" type="text" required />
+              </div>
+              <button type="submit" class="btn btn--primary">Save my spot</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--dark cta-band">
+        <div class="container">
+          <h2>Need something today?</h2>
+          <p>Redact AI is available now: seven-day trial, no card.</p>
+          <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Learning Index</title>
+    <meta
+      name="description"
+      content="Contact The Learning Index for contract services, product questions, or general support. We route your message to the right humans."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">Contact</span>
+          <h1>Route your question to the <span class="text-gold">right</span> place.</h1>
+          <p>
+            Contract services stay on the left. Product questions and general notes go on the right. No maze, no
+            generic “info@” black hole if we can help it.
+          </p>
+          <div class="hero-actions">
+            <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+            <a href="evaled.html" class="btn btn--ghost">Workshop registration</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-panel" id="services">
+            <h2>Contract services inquiry</h2>
+            <p>Separate track for district administrators and staffing or evaluation needs.</p>
+            <div class="note-box">
+              Use this form for procurement-friendly conversations. For a quick product question, use the general
+              form →
+            </div>
+            <form name="contact-contract" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact-contract" />
+              <p class="sr-only">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="cc-name">Name</label>
+                  <input id="cc-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="cc-district">District</label>
+                  <input id="cc-district" name="district" type="text" required />
+                </div>
+                <div class="form-field">
+                  <label for="cc-role">Role</label>
+                  <input id="cc-role" name="role" type="text" required />
+                </div>
+                <div class="form-field">
+                  <label for="cc-need">What you need</label>
+                  <input id="cc-need" name="need" type="text" required />
+                </div>
+                <div class="form-field">
+                  <label for="cc-message">Message</label>
+                  <textarea id="cc-message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary">Send to services team</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-panel" id="general">
+            <h2>General &amp; product support</h2>
+            <p>Redact AI access, billing questions, workshop details, or a note for Keon and Monique.</p>
+            <form name="contact-general" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact-general" />
+              <p class="sr-only">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="cg-name">Name</label>
+                  <input id="cg-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="cg-email">Email</label>
+                  <input id="cg-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="cg-topic">Topic</label>
+                  <select id="cg-topic" name="topic" required>
+                    <option value="">Select…</option>
+                    <option value="redact-ai">Redact AI</option>
+                    <option value="45days">45Days</option>
+                    <option value="evaled">EVALed</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="cg-message">Message</label>
+                  <textarea id="cg-message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--ghost-dark">Send message</button>
+              </div>
+            </form>
+            <p class="small muted" style="margin-top: 16px">
+              Prefer email? <a href="mailto:hello@thelearningindex.com">hello@thelearningindex.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--secondary cta-band" style="text-align: left">
+        <div class="container">
+          <h2 style="text-align: center">Not sure where to start?</h2>
+          <p style="text-align: center; max-width: 36rem; margin-left: auto; margin-right: auto">
+            If you’re an individual practitioner exploring tools, start with the Redact AI trial. If you’re staring
+            down a staffing gap, use the contract form.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px">
+            <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+            <a href="services.html" class="btn btn--ghost-dark">Contract services overview</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

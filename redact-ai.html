@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redact AI: FERPA-safe redaction for SPED drafts | The Learning Index</title>
+    <meta
+      name="description"
+      content="Upload, redact, and export evaluation drafts for safer AI workflows. Chromebook-friendly. Try free for 7 days, no credit card."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/redact-ai.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">Redact AI</span>
+          <h1>Redact first. <span class="text-gold">Prompt</span> with confidence.</h1>
+          <p>
+            Strip identifiers from evaluation language before it ever touches an AI tool, so you keep student
+            privacy at the center without slowing your week.
+          </p>
+          <div class="hero-actions">
+            <a href="#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+            <a href="evaled.html" class="btn btn--ghost">Workshop registration</a>
+          </div>
+          <p class="small muted" style="margin-top: 12px; opacity: 0.85">No credit card required.</p>
+        </div>
+      </header>
+
+      <section class="section section--secondary">
+        <div class="container">
+          <h2>How it works</h2>
+          <p class="stack-md" style="max-width: 36rem; margin-bottom: 28px">
+            Three steps you can explain to your admin in one sentence each.
+          </p>
+          <div class="steps">
+            <div class="card step-card">
+              <div class="step-num">1</div>
+              <h3>Upload</h3>
+              <p class="small">Bring in a draft you’d normally hesitate to paste anywhere.</p>
+            </div>
+            <div class="card step-card">
+              <div class="step-num">2</div>
+              <h3>Redact</h3>
+              <p class="small">Remove or mask identifiers so the remaining text is safer to use.</p>
+            </div>
+            <div class="card step-card">
+              <div class="step-num">3</div>
+              <h3>Use safely</h3>
+              <p class="small">Export AI-ready copy you can stand behind in your documentation habits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>What you get</h2>
+          <p style="max-width: 36rem; margin-bottom: 24px">Built for diagnosticians, TSVIs, and teams living on Chromebooks.</p>
+          <ul class="feature-list">
+            <li>
+              <strong>FERPA-minded redaction</strong>
+              Designed around the reality that student details show up everywhere in your drafts.
+            </li>
+            <li>
+              <strong>AI-ready output</strong>
+              Cleaner text for prompting without treating privacy like an afterthought.
+            </li>
+            <li>
+              <strong>Chromebook compatible</strong>
+              Meet people where they already work. No fancy lab machine required.
+            </li>
+            <li>
+              <strong>Team access</strong>
+              Share a sensible workflow across related services without reinventing it campus by campus.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--secondary" id="trial">
+        <div class="container">
+          <h2>Pricing</h2>
+          <p style="max-width: 36rem; margin-bottom: 24px">Start free. Upgrade when it’s clearly saving you time.</p>
+          <div class="pricing-table">
+            <div class="price-card price-card--highlight">
+              <h3>Free trial</h3>
+              <p class="small muted">7 days</p>
+              <div class="price-amount">$0</div>
+              <ul>
+                <li>Full feature access during trial</li>
+                <li>No credit card to start</li>
+                <li>See if it fits your workflow</li>
+              </ul>
+              <a href="#start-trial-form" class="btn btn--primary btn--block">Start trial</a>
+            </div>
+            <div class="price-card">
+              <h3>Pro</h3>
+              <p class="small muted">Per user</p>
+              <div class="price-amount">$14.99<span class="small">/mo</span></div>
+              <ul>
+                <li>Ongoing redaction credits</li>
+                <li>Email support</li>
+                <li>Best for individual practitioners</li>
+              </ul>
+              <a href="contact.html" class="btn btn--ghost-dark btn--block">Talk with us</a>
+            </div>
+            <div class="price-card">
+              <h3>Campus</h3>
+              <p class="small muted">Small teams</p>
+              <div class="price-amount">Let’s talk</div>
+              <ul>
+                <li>Shared seats</li>
+                <li>Light onboarding help</li>
+                <li>Simple procurement path</li>
+              </ul>
+              <a href="contact.html" class="btn btn--ghost-dark btn--block">Contact us</a>
+            </div>
+            <div class="price-card">
+              <h3>District</h3>
+              <p class="small muted">Multi-campus</p>
+              <div class="price-amount">Custom</div>
+              <ul>
+                <li>District-wide rollout options</li>
+                <li>Training add-ons via EVALed</li>
+                <li>Documentation support</li>
+              </ul>
+              <a href="contact.html" class="btn btn--ghost-dark btn--block">District inquiry</a>
+            </div>
+          </div>
+          <div id="start-trial-form" style="scroll-margin-top: 88px; margin-top: 40px; max-width: 520px">
+            <h3 style="margin-bottom: 12px">Start your 7-day trial</h3>
+            <p class="small muted" style="margin-bottom: 16px">We’ll follow up with access details. No credit card required.</p>
+            <form name="redact-ai-trial" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="redact-ai-trial" />
+              <p class="sr-only">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="trial-name">Name</label>
+                  <input id="trial-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="trial-email">Work email</label>
+                  <input id="trial-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="trial-role">Role / title</label>
+                  <input id="trial-role" name="role" type="text" required />
+                </div>
+                <button type="submit" class="btn btn--primary">Request trial access</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq-item">
+            <h3>Is this “FERPA certified”?</h3>
+            <p>
+              No vendor can hand you a magic badge that replaces your professional judgment. Redact AI is built
+              to help you remove sensitive details before you use AI. Your district policies and processes
+              still lead.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What exactly gets redacted?</h3>
+            <p>
+              The goal is identifiers and details that shouldn’t travel into a model, including names, dates of birth,
+              addresses, and other student-specific markers you point the tool at.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Who is it for?</h3>
+            <p>
+              Diagnosticians, related service providers, and teams who write evaluation language and are tired of
+              choosing between speed and caution.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark cta-band">
+        <div class="container">
+          <h2>Try Redact AI free for seven days</h2>
+          <p>See if it earns a place next to your spellchecker.</p>
+          <a href="#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+          <p class="small muted" style="margin-top: 16px">
+            <a href="evaled.html" style="color: inherit; text-decoration: underline">EVALed workshops</a>
+            · Email opt-in in the site footer
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

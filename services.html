@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contract services: SPED staffing &amp; evaluations | The Learning Index</title>
+    <meta
+      name="description"
+      content="Diagnostician staffing, evaluation support, and IEP services from experienced Texas SPED professionals. Contact TLI for district needs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">Contract services</span>
+          <h1>Experienced SPED professionals, ready when your district needs them.</h1>
+          <p>
+            Separate track: this isn’t a free trial page. When you’re short-staffed or staring down a backlog,
+            start with a direct conversation. We’ll tell you honestly if we can help.
+          </p>
+          <div class="hero-actions">
+            <a href="#contract-form" class="btn btn--primary">Contact us about services</a>
+            <a href="redact-ai.html#trial" class="btn btn--ghost">Or try Redact AI Free</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container">
+          <h2>What we offer</h2>
+          <div class="grid-2" style="margin-top: 8px">
+            <div class="service-block">
+              <h3>Diagnostician staffing</h3>
+              <p>Credentialed support for evaluation seasons, leave coverage, and hiring gaps.</p>
+            </div>
+            <div class="service-block">
+              <h3>Evaluation services</h3>
+              <p>Hands-on evaluation work grounded in Texas procedures and real ARD timelines.</p>
+            </div>
+            <div class="service-block">
+              <h3>IEP support</h3>
+              <p>Practical help translating evaluation data into usable IEP language teams can defend.</p>
+            </div>
+            <div class="service-block">
+              <h3>Targeted PD</h3>
+              <p>Through EVALed, we can pair tools training with district-specific context.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--secondary">
+        <div class="container">
+          <h2>Why districts call TLI</h2>
+          <ul class="list-check" style="max-width: 40rem">
+            <li><strong>Credentialed staff:</strong> We match people to the actual job, not a generic “consultant.”</li>
+            <li><strong>SPED-native workflows:</strong> No translating your urgency through a generalist account manager.</li>
+            <li><strong>Texas-based:</strong> We understand state context without you hand-holding the basics.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contract-form">
+        <div class="container" style="max-width: 640px">
+          <h2>Contract services inquiry</h2>
+          <p style="margin-bottom: 20px">Tell us what you’re facing. We reply to real humans, usually within two business days.</p>
+          <form name="contract-services" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contract-services" />
+            <p class="sr-only">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="cs-name">Your name</label>
+                <input id="cs-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="cs-district">District / organization</label>
+                <input id="cs-district" name="district" type="text" required />
+              </div>
+              <div class="form-field">
+                <label for="cs-role">Your role</label>
+                <input id="cs-role" name="role" type="text" placeholder="e.g., Director of Special Education" required />
+              </div>
+              <div class="form-field">
+                <label for="cs-need">What you need</label>
+                <select id="cs-need" name="need" required>
+                  <option value="">Select…</option>
+                  <option value="staffing">Diagnostician staffing</option>
+                  <option value="evaluations">Evaluation support</option>
+                  <option value="iep">IEP support</option>
+                  <option value="pd">Professional development</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="cs-message">Message</label>
+                <textarea id="cs-message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Send inquiry</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

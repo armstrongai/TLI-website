@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVALed: Professional development for SPED practitioners | The Learning Index</title>
+    <meta
+      name="description"
+      content="Practitioner-led workshops and events, including FERPA-safe AI training. Register for upcoming EVALed sessions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/evaled.css" />
+  </head>
+  <body>
+    <div data-include="nav"></div>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="badge page-eyebrow label">EVALed PD</span>
+          <h1>Professional development built for <span class="text-gold">SPED</span> practitioners.</h1>
+          <p>
+            Short sessions. Practical handouts. Facilitators who still sit in meetings with you, not talking heads
+            reading slides about “best practices.”
+          </p>
+          <div class="hero-actions">
+            <a href="#events" class="btn btn--primary">Register for a workshop</a>
+            <a href="redact-ai.html#trial" class="btn btn--ghost">Try Redact AI Free</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="section" id="events">
+        <div class="container">
+          <h2>Upcoming events</h2>
+          <p style="max-width: 40rem; margin-bottom: 24px">Save your seat. We keep cohorts small on purpose.</p>
+          <div class="grid-2" style="max-width: 900px">
+            <article class="event-card event-card--featured">
+              <span class="badge label">April 26</span>
+              <h3>FERPA-Safe AI for SPED writers</h3>
+              <p class="event-meta">Live virtual · 3 hours · practical redaction habits you can use Monday</p>
+              <span class="pill-price">$47</span>
+              <p>
+                We’ll walk through a realistic draft, show where identifiers hide, and build a workflow that doesn’t
+                depend on luck.
+              </p>
+              <a href="contact.html" class="btn btn--primary">Register (invoice / PO friendly)</a>
+            </article>
+            <article class="event-card">
+              <h3>More 2026 dates</h3>
+              <p class="event-meta">Additional topics in the queue: evaluation language, ARD prep, AI guardrails.</p>
+              <p>Join the email list below and you’ll get first notice when we open the next cohort.</p>
+              <a href="#notify" class="btn btn--ghost-dark">Get notified</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--secondary">
+        <div class="container">
+          <h2>Recent highlight</h2>
+          <div class="recap">
+            <p class="badge label" style="margin-bottom: 12px">Feb 2026</p>
+            <h3>Virtual conference recap</h3>
+            <p>
+              Roughly <strong>50 practitioners</strong> joined us for a half-day focused on realistic AI use in
+              evaluation workflows: what to try, what to avoid, and how to talk about risk with your admin without
+              sounding paranoid.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>What makes EVALed different</h2>
+          <div class="diff-grid">
+            <div class="diff-item">
+              <h3>Built by practitioners</h3>
+              <p>Facilitators who still carry caseloads and know what “busy Thursday” actually means.</p>
+            </div>
+            <div class="diff-item">
+              <h3>Practical application</h3>
+              <p>You leave with language, templates, and habits, not a fuzzy mission statement.</p>
+            </div>
+            <div class="diff-item">
+              <h3>AI-forward, privacy-first</h3>
+              <p>We talk about new tools without pretending law and ethics are someone else’s problem.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--secondary" id="notify">
+        <div class="container">
+          <h2>Get notified of future events</h2>
+          <p style="max-width: 36rem; margin-bottom: 20px">Short emails when new workshops open.</p>
+          <form name="evaled-notify" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 480px">
+            <input type="hidden" name="form-name" value="evaled-notify" />
+            <p class="sr-only">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid form-grid--2">
+              <div class="form-field">
+                <label for="ev-name">Name</label>
+                <input id="ev-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="ev-email">Work email</label>
+                <input id="ev-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field" style="grid-column: 1 / -1">
+                <label for="ev-notes">What you’re hoping we cover (optional)</label>
+                <textarea id="ev-notes" name="notes"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="grid-column: 1 / -1">Notify me</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--dark cta-band">
+        <div class="container">
+          <h2>Bring safer AI into your writing workflow</h2>
+          <p>Try Redact AI free for seven days while you wait for the next EVALed session.</p>
+          <a href="redact-ai.html#trial" class="btn btn--primary">Try Redact AI Free for 7 Days</a>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>

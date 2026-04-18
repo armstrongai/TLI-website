@@ -1,0 +1,143 @@
+/* Site footer */
+
+.site-footer {
+  background: var(--tli-green-dark);
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--tli-gold);
+  text-decoration: underline;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    align-items: start;
+  }
+}
+
+.footer-brand .logo {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0 0 16px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--tli-white);
+}
+
+.footer-social a:hover {
+  background: var(--tli-gold);
+  color: var(--tli-green-dark);
+  text-decoration: none;
+}
+
+.footer-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tli-gold);
+  margin: 0 0 12px;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-optin p {
+  font-size: 14px;
+  margin: 0 0 12px;
+  opacity: 0.9;
+}
+
+.footer-optin form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 480px) {
+  .footer-optin form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-optin input[type="email"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--tli-white);
+  font-family: var(--font-sora);
+  font-size: 14px;
+}
+
+.footer-optin input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footer-optin .btn--primary {
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
