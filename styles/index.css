@@ -10,14 +10,13 @@
   padding: 0;
 }
 
-/* contain = full frame visible (like a file preview). cover crops to fill and hides edges. */
 .hero-video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  object-fit: cover;
+  object-position: center 28%;
   z-index: 0;
   opacity: 0.4;
 }
