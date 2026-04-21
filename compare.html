@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redact AI vs. The Competition | The Learning Index</title>
+<meta name="description" content="See how Redact AI compares to Adobe Acrobat, Redactable, and SafeRedact. The only FERPA-safe AI redaction tool built specifically for SPED professionals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #15452f;
+    --green-dark: #0e3122;
+    --green-light: #1e5c3f;
+    --gold: #cf9738;
+    --gold-light: rgba(207,151,56,0.12);
+    --white: #ffffff;
+    --text: #1a1a1a;
+    --text-mid: #4a4a4a;
+    --text-light: #888888;
+    --border: rgba(0,0,0,0.08);
+    --bg-light: #f8f7f4;
+  }
+
+  body {
+    font-family: 'Sora', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--green);
+    padding: 14px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-logo { color: var(--gold); font-size: 14px; font-weight: 600; letter-spacing: 0.05em; text-decoration: none; }
+  .nav-logo span { color: white; }
+  .nav-cta {
+    background: var(--gold);
+    color: var(--green);
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--green);
+    padding: 72px 48px 64px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(207,151,56,0.18);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 0.5px solid rgba(207,151,56,0.35);
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 640px;
+    margin: 0 auto 16px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero p {
+    color: rgba(255,255,255,0.65);
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 32px;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green);
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .hero-note {
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  /* WINNER STRIP */
+  .winner-strip {
+    background: var(--gold);
+    padding: 14px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .winner-strip p {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .winner-strip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); opacity: 0.4; }
+
+  /* SECTIONS */
+  .section { padding: 72px 48px; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .section-sub {
+    color: var(--text-mid);
+    font-size: 15px;
+    margin-bottom: 48px;
+    max-width: 560px;
+  }
+
+  /* COMPARISON TABLE */
+  .comp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .comp-table th {
+    padding: 20px 24px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .comp-table th:first-child { text-align: left; }
+  .comp-table th.featured {
+    background: var(--green);
+    color: var(--gold);
+    position: relative;
+  }
+  .comp-table th.featured::before {
+    content: "⭐ Best for SPED";
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(207,151,56,0.7);
+    margin-bottom: 4px;
+  }
+  .comp-table th.other { background: var(--bg-light); color: var(--text-mid); }
+  .comp-table th:first-child { background: white; }
+
+  .comp-table td {
+    padding: 16px 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-mid);
+  }
+  .comp-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text);
+    background: white;
+  }
+  .comp-table tr:last-child td { border-bottom: none; }
+  .comp-table tr:nth-child(even) td:not(:first-child) { background: rgba(248,247,244,0.8); }
+  .comp-table tr:nth-child(odd) td.featured-col { background: rgba(21,69,47,0.04); }
+  .comp-table tr:nth-child(even) td.featured-col { background: rgba(21,69,47,0.07); }
+
+  .check { color: #2A9D6E; font-size: 16px; font-weight: 600; }
+  .cross { color: #E24B4A; font-size: 16px; }
+  .partial { color: var(--gold); font-size: 13px; font-weight: 500; }
+  .price-cell { font-weight: 600; color: var(--text); }
+  .price-cell.winner { color: var(--green); font-size: 15px; }
+
+  /* ADVANTAGE CARDS */
+  .advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 0;
+  }
+  .adv-card {
+    background: white;
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .adv-card.highlight {
+    border: 1.5px solid var(--gold);
+    background: var(--gold-light);
+  }
+  .adv-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(21,69,47,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .adv-icon.gold-bg { background: rgba(207,151,56,0.15); }
+  .adv-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .adv-card p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+
+  /* COMPETITOR BREAKDOWN */
+  .comp-breakdown { background: var(--bg-light); padding: 72px 0; }
+  .comp-breakdown .inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+  .comp-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 40px; }
+  .comp-card {
+    background: white;
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .comp-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .comp-name { font-size: 15px; font-weight: 600; color: var(--text); }
+  .comp-price-tag {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(226,75,74,0.1);
+    color: #A32D2D;
+  }
+  .comp-verdict {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .comp-verdict strong { color: var(--text); }
+  .comp-bottom {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #E24B4A;
+    padding-top: 14px;
+    border-top: 0.5px solid var(--border);
+  }
+
+  /* FOOTER CTA */
+  .footer-cta {
+    background: var(--green);
+    padding: 72px 48px;
+    text-align: center;
+  }
+  .footer-cta h2 { color: white; font-size: 28px; font-weight: 600; margin-bottom: 10px; }
+  .footer-cta p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 28px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--green-dark);
+    padding: 24px 48px;
+    text-align: center;
+  }
+  footer p { color: rgba(255,255,255,0.35); font-size: 12px; }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 8px; }
+
+  @media (max-width: 768px) {
+    nav, .hero, .section, .winner-strip, .footer-cta, footer { padding-left: 24px; padding-right: 24px; }
+    .hero h1 { font-size: 28px; }
+    .comp-table { font-size: 11px; }
+    .comp-table th, .comp-table td { padding: 12px 10px; }
+    .comp-breakdown .inner { padding: 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">THE LEARNING <span>INDEX</span></a>
+  <a href="redact-ai.html#trial" class="nav-cta">Try Free — 7 Days</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">Honest Comparison</div>
+  <h1>Redact AI vs. <span>everyone else</span></h1>
+  <p>Most redaction tools were built for lawyers and law enforcement. Redact AI was built for the diagnostician who has 47 minutes before an ARD meeting.</p>
+  <a href="redact-ai.html#trial" class="hero-cta">Start 7-Day Free Trial</a>
+  <p class="hero-note">No credit card required.</p>
+</div>
+
+<div class="winner-strip">
+  <div class="dot"></div>
+  <p>Redact AI is the only AI-powered redaction tool built specifically for SPED professionals</p>
+  <div class="dot"></div>
+</div>
+
+<!-- COMPARISON TABLE -->
+<div class="section">
+  <div class="section-label">Side by Side</div>
+  <h2>How the tools actually compare</h2>
+  <p class="section-sub">We priced every competitor, tested their workflows, and asked one question: would a diagnostician actually use this?</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th class="featured">Redact AI</th>
+        <th class="other">Adobe Acrobat Pro</th>
+        <th class="other">Redactable</th>
+        <th class="other">SafeRedact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monthly price</td>
+        <td class="featured-col price-cell winner">$9.99/mo</td>
+        <td class="price-cell">$22.99/mo</td>
+        <td class="price-cell">$19/mo (limited)</td>
+        <td class="price-cell">$29/mo</td>
+      </tr>
+      <tr>
+        <td>Annual option</td>
+        <td class="featured-col"><span class="check">✓</span> $99/yr</td>
+        <td>~$180/yr</td>
+        <td>~$182/yr</td>
+        <td>$99/yr</td>
+      </tr>
+      <tr>
+        <td>AI-powered detection</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span> Manual only</td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>Unlimited documents</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span> Volume caps</td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>Built for SPED workflows</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>FERPA-specific guidance</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="partial">Partial</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>FIE / IEP / ARD support</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>Zero data retention</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="partial">Partial</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>Built by practitioners</td>
+        <td class="featured-col"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>7-day free trial</td>
+        <td class="featured-col"><span class="check">✓</span> No card needed</td>
+        <td><span class="partial">Limited trial</span></td>
+        <td><span class="partial">Free tier only</span></td>
+        <td><span class="partial">1 doc free</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ADVANTAGES -->
+<div style="background: var(--bg-light); padding: 72px 0;">
+  <div class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="section-label">Why it matters</div>
+    <h2>The Redact AI difference</h2>
+    <p class="section-sub">These aren't features. They're the reason a diagnostician in the middle of evaluation season will actually use this tool.</p>
+    <div class="advantage-grid">
+      <div class="adv-card highlight">
+        <div class="adv-icon gold-bg">🏫</div>
+        <h3>Built for your workflow</h3>
+        <p>FIEs, IEPs, ARD documents, psychoeducational reports — Redact AI knows what SPED documents look like because we write them too.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon">⚡</div>
+        <h3>Seconds, not minutes</h3>
+        <p>Adobe's manual process takes 30 to 60 minutes per document. Redact AI handles the same document in under two minutes, automatically.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon">🔒</div>
+        <h3>Zero retention, always</h3>
+        <p>Your documents never live on our servers. Local processing and a strict zero-retention policy means no audit trail left behind.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon gold-bg">💰</div>
+        <h3>Half the price of Adobe</h3>
+        <p>At $9.99/month you get full AI-powered redaction for less than half what Adobe charges — and Adobe doesn't even use AI to detect PII.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPETITOR BREAKDOWN -->
+<div class="comp-breakdown">
+  <div class="inner">
+    <div class="section-label">The honest breakdown</div>
+    <h2 style="font-size:32px;font-weight:600;margin-bottom:12px;">What the other tools get wrong for SPED</h2>
+    <p style="color:var(--text-mid);font-size:15px;max-width:560px;">These are good tools built for the wrong audience. Here's what breaks down when a diagnostician tries to use them.</p>
+    <div class="comp-cards">
+      <div class="comp-card">
+        <div class="comp-card-header">
+          <span class="comp-name">Adobe Acrobat Pro</span>
+          <span class="comp-price-tag">$22.99/mo</span>
+        </div>
+        <p class="comp-verdict">The industry standard — but redaction is entirely manual. <strong>You identify every name, every ID, every date of birth yourself.</strong> At 30 to 60 minutes per document, a diagnostician with 15 open evaluations cannot afford this workflow.</p>
+        <div class="comp-bottom">No AI detection — manual only</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-card-header">
+          <span class="comp-name">Redactable</span>
+          <span class="comp-price-tag">$19–$1,299/mo</span>
+        </div>
+        <p class="comp-verdict">AI-powered and well-built — but priced per document volume. <strong>A diagnostician processing 20 evaluations a month hits the starter cap immediately</strong> and jumps to a higher tier. No SPED-specific workflows.</p>
+        <div class="comp-bottom">Volume caps punish active caseloads</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-card-header">
+          <span class="comp-name">SafeRedact</span>
+          <span class="comp-price-tag">$29/mo</span>
+        </div>
+        <p class="comp-verdict">Browser-based and privacy-focused — but <strong>built for legal and compliance teams, not SPED practitioners.</strong> No FIE or IEP document context, no FERPA-specific guidance, and costs $19 more per month than Redact AI.</p>
+        <div class="comp-bottom">No SPED context or FERPA guidance</div>
+      </div>
+      <div class="comp-card">
+        <div class="comp-card-header">
+          <span class="comp-name">CaseGuard</span>
+          <span class="comp-price-tag">$1,000+/yr</span>
+        </div>
+        <p class="comp-verdict">Enterprise-grade redaction built for law enforcement video and audio. <strong>A diagnostician does not need a tool built for police body cams.</strong> Overkill in every direction — price, complexity, and scope.</p>
+        <div class="comp-bottom">Built for law enforcement, not SPED</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER CTA -->
+<div class="footer-cta">
+  <h2>The right tool for the right professional</h2>
+  <p>Try Redact AI free for 7 days. No credit card. Full Pro access from day one.</p>
+  <a href="redact-ai.html#trial" class="hero-cta">Start My Free Trial</a>
+  <p class="hero-note">Then $9.99/month — cancel anytime. Early adopter pricing locks in your rate.</p>
+</div>
+
+<footer>
+  <p>
+    <a href="index.html">Home</a>
+    <a href="redact-ai.html">Redact AI</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </p>
+  <p style="margin-top:10px;">© 2026 The Learning Index, LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
