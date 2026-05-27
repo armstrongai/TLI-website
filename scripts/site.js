@@ -86,7 +86,7 @@
   function loadFormsScript() {
     if (document.querySelector("[data-netlify][data-ajax]") && !document.querySelector('script[src*="forms.js"]')) {
       var s = document.createElement("script");
-      s.src = "scripts/forms.js?v=9";
+      s.src = "scripts/forms.js?v=10";
       s.defer = true;
       document.body.appendChild(s);
     }

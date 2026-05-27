@@ -1,5 +1,35 @@
 /* Contact page — minimal, spacious */
 
+.page-hero--light {
+  background: var(--tli-bg-secondary);
+  color: var(--tli-text-dark);
+}
+
+.page-hero--light h1 {
+  color: var(--tli-green);
+}
+
+.page-hero--light .page-hero-lead {
+  color: var(--tli-text-mid);
+  max-width: 40rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.page-hero--light .page-eyebrow {
+  background: var(--tli-gold-light);
+  color: var(--tli-green);
+  border-color: rgba(212, 164, 55, 0.35);
+}
+
+.contact-form-note {
+  font-size: 14px;
+  color: var(--tli-text-mid);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
 .contact-hero {
   padding-bottom: 40px;
 }

@@ -8,6 +8,24 @@
   color: var(--tli-white);
 }
 
+.evaled-hero-lead {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 44rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.evaled-intro {
+  max-width: 44rem;
+}
+
+.evaled-intro p {
+  color: var(--tli-text-mid);
+  line-height: 1.75;
+  margin-top: 24px;
+}
+
 .evaled-feature-img {
   border-radius: var(--radius-card);
   overflow: hidden;
@@ -21,34 +39,27 @@
   display: block;
 }
 
-.highlights-grid {
-  display: grid;
-  gap: 32px;
-  margin-top: 8px;
-}
-
-@media (min-width: 900px) {
-  .highlights-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
-}
-
-.highlight-copy p {
+.highlight-list--bullets {
+  margin: 0 0 28px;
+  padding-left: 1.25rem;
   color: var(--tli-text-mid);
   line-height: 1.75;
 }
 
-.highlight-list {
-  margin: 16px 0 0;
-  padding-left: 1.25rem;
-  color: var(--tli-text-mid);
-  line-height: 1.7;
+.highlight-list--bullets li + li {
+  margin-top: 8px;
 }
 
 .highlight-gallery {
   display: grid;
-  gap: 12px;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+@media (min-width: 640px) {
+  .highlight-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .highlight-gallery img {
@@ -62,7 +73,7 @@
 .section-intro {
   max-width: 40rem;
   color: var(--tli-text-mid);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .attendee-grid {
@@ -79,19 +90,14 @@
   }
 }
 
-@media (min-width: 900px) {
-  .attendee-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .attendee-grid li {
   padding: 16px 18px;
   background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-sm);
   font-weight: 500;
-  color: var(--tli-green-dark);
+  color: var(--tli-green);
+  font-size: 15px;
 }
 
 .vision-block {
@@ -101,5 +107,18 @@
 .vision-block p {
   color: var(--tli-text-mid);
   line-height: 1.75;
-  font-size: 1.05rem;
+}
+
+.evaled-stay {
+  max-width: 40rem;
+}
+
+.evaled-stay p {
+  color: var(--tli-text-mid);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.evaled-stay h2 {
+  color: var(--tli-green);
 }
