@@ -1,31 +1,45 @@
-/* Contract services page */
+/* Services page */
+
+.services-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .service-block {
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-card);
-  padding: 24px;
+  padding: 28px;
   background: var(--tli-white);
 }
 
 .service-block h3 {
   color: var(--tli-green);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
 }
 
 .service-block p {
   color: var(--tli-text-mid);
   font-size: 15px;
+  line-height: 1.7;
   margin: 0;
 }
 
-.two-col {
-  display: grid;
-  gap: 32px;
+.services-note {
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media (min-width: 900px) {
-  .two-col {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
+.services-note p {
+  color: var(--tli-text-mid);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
 }

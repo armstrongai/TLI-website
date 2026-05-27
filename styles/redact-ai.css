@@ -80,7 +80,7 @@
 
 .price-card--highlight {
   border-color: var(--tli-gold);
-  box-shadow: 0 8px 24px rgba(21, 69, 47, 0.1);
+  box-shadow: 0 8px 24px rgba(11, 79, 51, 0.1);
 }
 
 .price-card h3 {

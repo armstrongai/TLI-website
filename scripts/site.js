@@ -67,6 +67,31 @@
     }
   }
 
+  function applySocialLinks() {
+    var social = window.TLI_CONFIG && window.TLI_CONFIG.social;
+    if (!social) return;
+    Object.keys(social).forEach(function (key) {
+      var link = document.querySelector('[data-social="' + key + '"]');
+      if (!link) return;
+      var url = social[key];
+      if (!url) {
+        link.removeAttribute("target");
+        link.removeAttribute("rel");
+        return;
+      }
+      link.href = url;
+    });
+  }
+
+  function loadFormsScript() {
+    if (document.querySelector("[data-netlify][data-ajax]") && !document.querySelector('script[src*="forms.js"]')) {
+      var s = document.createElement("script");
+      s.src = "scripts/forms.js?v=9";
+      s.defer = true;
+      document.body.appendChild(s);
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     Promise.all([
       loadPartial('[data-include="nav"]', "partials/nav.html"),
@@ -75,6 +100,8 @@
       .then(function () {
         setActiveNav();
         initNav();
+        applySocialLinks();
+        loadFormsScript();
       })
       .catch(function (err) {
         console.error(err);

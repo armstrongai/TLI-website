@@ -1,0 +1,121 @@
+/* Products page */
+
+.product-feature {
+  display: grid;
+  gap: 40px;
+  padding: 32px;
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  background: var(--tli-white);
+  box-shadow: 0 8px 24px rgba(11, 79, 51, 0.06);
+}
+
+@media (min-width: 900px) {
+  .product-feature {
+    grid-template-columns: 1.2fr 0.9fr;
+    align-items: start;
+  }
+}
+
+.product-feature h2 {
+  color: var(--tli-green);
+  margin: 12px 0;
+}
+
+.product-feature-copy p {
+  color: var(--tli-text-mid);
+  line-height: 1.75;
+}
+
+.product-points {
+  margin: 20px 0 0;
+  padding-left: 1.25rem;
+  color: var(--tli-text-mid);
+  line-height: 1.7;
+}
+
+.product-feature-aside {
+  background: var(--tli-bg-secondary);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  border: 1px solid var(--tli-border);
+}
+
+.product-feature-aside h3 {
+  color: var(--tli-green);
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.audience-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.audience-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--tli-border);
+  font-size: 14px;
+  color: var(--tli-text-mid);
+}
+
+.audience-list li:last-child {
+  border-bottom: none;
+}
+
+.product-cta-box {
+  padding-top: 8px;
+  border-top: 1px solid var(--tli-border);
+}
+
+.product-cta-box h3 {
+  margin-top: 16px;
+}
+
+.product-cta-box p {
+  font-size: 14px;
+  color: var(--tli-text-mid);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.product-compare-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.more-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+@media (min-width: 640px) {
+  .more-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.more-card {
+  background: var(--tli-white);
+  border: 1px solid var(--tli-border);
+  border-radius: var(--radius-card);
+  padding: 24px;
+}
+
+.more-card h3 {
+  color: var(--tli-green);
+  margin-bottom: 8px;
+}
+
+.more-card p {
+  color: var(--tli-text-mid);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.products-more h2 {
+  margin-bottom: 4px;
+}

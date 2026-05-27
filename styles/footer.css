@@ -1,112 +1,135 @@
-/* Site footer */
+/* Site footer — clean, spacious, minimal */
 
 .site-footer {
-  background: var(--tli-green-dark);
-  color: rgba(255, 255, 255, 0.9);
-  padding-top: 48px;
-  padding-bottom: 24px;
+  background: var(--tli-green);
+  color: rgba(255, 255, 255, 0.92);
+  padding-top: 56px;
+  padding-bottom: 28px;
 }
 
 .site-footer a {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
 }
 
-.site-footer a:hover {
-  color: var(--tli-gold);
-  text-decoration: underline;
-}
-
-.footer-grid {
+.footer-main {
   display: grid;
-  gap: 32px;
-  margin-bottom: 40px;
+  gap: 40px;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 @media (min-width: 900px) {
-  .footer-grid {
-    grid-template-columns: 1.1fr 1fr 1.1fr;
+  .footer-main {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 64px;
     align-items: start;
+  }
+
+  .footer-col--signup {
+    padding-left: 48px;
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
   }
 }
 
-.footer-brand .logo {
-  margin-bottom: 8px;
+.footer-logo {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
-.footer-tagline {
+.footer-logo img {
+  width: auto;
+  max-width: 200px;
+  max-height: 56px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
+.footer-blurb {
   font-size: 14px;
-  line-height: 1.6;
-  opacity: 0.85;
-  margin: 0 0 16px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 20px;
+  max-width: 36rem;
+}
+
+.footer-email {
+  margin: 0 0 24px;
+  font-size: 14px;
+}
+
+.footer-email a {
+  color: var(--tli-gold);
+  font-weight: 500;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
+  color: var(--tli-white);
 }
 
 .footer-social {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.footer-social a {
+.footer-social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--tli-white);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
-.footer-social a:hover {
+.footer-social-link:hover {
   background: var(--tli-gold);
-  color: var(--tli-green-dark);
+  border-color: var(--tli-gold);
+  color: var(--tli-green);
   text-decoration: none;
 }
 
 .footer-heading {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--tli-gold);
   margin: 0 0 12px;
 }
 
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-optin p {
+.footer-signup-note {
   font-size: 14px;
-  margin: 0 0 12px;
-  opacity: 0.9;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 20px;
+  max-width: 22rem;
 }
 
-.footer-optin form {
+.footer-signup-fields {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  max-width: 360px;
 }
 
 @media (min-width: 480px) {
-  .footer-optin form {
+  .footer-signup-fields {
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: stretch;
   }
 }
 
-.footer-optin input[type="email"] {
+.footer-signup-form input[type="email"] {
   flex: 1;
-  min-width: 180px;
-  padding: 10px 12px;
+  min-width: 0;
+  padding: 12px 14px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.08);
@@ -115,29 +138,51 @@
   font-size: 14px;
 }
 
-.footer-optin input::placeholder {
+.footer-signup-form input[type="email"]::placeholder {
   color: rgba(255, 255, 255, 0.45);
 }
 
-.footer-optin .btn--primary {
+.footer-signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--tli-gold);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.footer-signup-form .btn--primary {
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+.footer-signup-form .form-success {
+  font-size: 14px;
+  color: var(--tli-gold);
+  margin: 0;
 }
 
 .footer-bottom {
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .footer-legal {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: wrap;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+
+.footer-legal a:hover {
+  color: var(--tli-gold);
 }
