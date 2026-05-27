@@ -5,17 +5,19 @@
   color: var(--tli-white);
 }
 
+/* Do not set max-width here — .container already handles page width */
 .hero-home-inner {
-  max-width: 36rem;
+  width: 100%;
 }
 
 .hero-logo {
-  display: inline-block;
-  margin-bottom: 2rem;
+  display: block;
+  margin-bottom: 2.5rem;
+  line-height: 0;
 }
 
 .hero-logo img {
-  width: min(280px, 78vw);
+  width: min(320px, 85vw);
   height: auto;
   mix-blend-mode: screen;
 }
@@ -32,23 +34,36 @@
 
 .hero--home h1 {
   color: var(--tli-white);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  line-height: 1.25;
-  margin-bottom: 1rem;
+  font-size: clamp(1.875rem, 4.5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 22ch;
+}
+
+@media (min-width: 768px) {
+  .hero--home h1 {
+    max-width: 28ch;
+  }
 }
 
 .hero-lead {
-  font-size: clamp(1.125rem, 2.5vw, 1.35rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 500;
   color: var(--tli-gold);
-  margin: 0 0 1.75rem;
-  line-height: 1.4;
+  margin: 0 0 2rem;
+  line-height: 1.45;
+  max-width: 36rem;
+}
+
+.hero-copy {
+  max-width: 40rem;
 }
 
 .hero-copy p {
   color: rgba(255, 255, 255, 0.92);
-  font-size: 1.05rem;
-  margin-bottom: 1em;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
 }
 
 .offer-grid {
