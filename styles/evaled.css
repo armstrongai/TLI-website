@@ -2,6 +2,7 @@
 
 .evaled-hero {
   background: linear-gradient(135deg, var(--tli-green-dark) 0%, var(--tli-green) 100%);
+  text-align: left;
 }
 
 .evaled-hero h1 {
@@ -10,20 +11,17 @@
 
 .evaled-hero-lead {
   color: rgba(255, 255, 255, 0.92);
-  max-width: 44rem;
   font-size: 1.0625rem;
   line-height: 1.65;
   margin: 0;
-}
-
-.evaled-intro {
-  max-width: 44rem;
+  max-width: var(--content-readable);
 }
 
 .evaled-intro p {
   color: var(--tli-text-mid);
   line-height: 1.75;
   margin-top: 24px;
+  max-width: var(--content-readable);
 }
 
 .evaled-feature-img {
@@ -44,6 +42,7 @@
   padding-left: 1.25rem;
   color: var(--tli-text-mid);
   line-height: 1.75;
+  max-width: var(--content-readable);
 }
 
 .highlight-list--bullets li + li {
@@ -53,12 +52,13 @@
 .highlight-gallery {
   display: grid;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
 @media (min-width: 640px) {
   .highlight-gallery {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;
   }
 }
 
@@ -71,9 +71,9 @@
 }
 
 .section-intro {
-  max-width: 40rem;
   color: var(--tli-text-mid);
   margin-bottom: 12px;
+  max-width: var(--content-readable);
 }
 
 .attendee-grid {
@@ -90,6 +90,12 @@
   }
 }
 
+@media (min-width: 900px) {
+  .attendee-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .attendee-grid li {
   padding: 16px 18px;
   background: var(--tli-white);
@@ -100,23 +106,17 @@
   font-size: 15px;
 }
 
-.vision-block {
-  max-width: 44rem;
-}
-
 .vision-block p {
   color: var(--tli-text-mid);
   line-height: 1.75;
-}
-
-.evaled-stay {
-  max-width: 40rem;
+  max-width: var(--content-readable);
 }
 
 .evaled-stay p {
   color: var(--tli-text-mid);
   line-height: 1.75;
   margin-bottom: 24px;
+  max-width: var(--content-readable);
 }
 
 .evaled-stay h2 {

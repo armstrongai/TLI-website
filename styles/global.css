@@ -13,15 +13,16 @@
   --tli-border: rgba(0, 0, 0, 0.08);
   --tli-bg-secondary: #f5f5f3;
   --font-sora: "Sora", system-ui, -apple-system, sans-serif;
-  --max-width: 1100px;
+  --max-width: 1120px;
+  --content-readable: 42rem;
   --radius-card: 12px;
   --radius-btn: 8px;
   --radius-pill: 20px;
   --radius-sm: 6px;
-  --section-pad-y: 80px;
-  --section-pad-x: 64px;
-  --section-pad-y-mobile: 40px;
-  --section-pad-x-mobile: 24px;
+  --section-pad-y: 64px;
+  --section-pad-x: 24px;
+  --section-pad-y-mobile: 48px;
+  --section-pad-x-mobile: 20px;
 }
 
 *,
@@ -42,6 +43,11 @@ body {
   line-height: 1.7;
   color: var(--tli-text-dark);
   background: var(--tli-white);
+  text-align: left;
+}
+
+main {
+  text-align: left;
 }
 
 img,
@@ -125,6 +131,10 @@ small {
 .section {
   padding-top: var(--section-pad-y-mobile);
   padding-bottom: var(--section-pad-y-mobile);
+}
+
+.section h2 {
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -316,14 +326,39 @@ small {
 
 .page-hero p {
   opacity: 0.92;
-  max-width: 40rem;
+  max-width: var(--content-readable);
   margin-bottom: 0;
 }
 
 .page-hero-lead {
   opacity: 0.92;
-  max-width: 40rem;
+  max-width: var(--content-readable);
   margin-bottom: 0;
+}
+
+.page-hero--light {
+  background: var(--tli-bg-secondary);
+  color: var(--tli-text-dark);
+  padding: 48px 0 40px;
+  text-align: left;
+}
+
+.page-hero--light h1 {
+  color: var(--tli-green);
+}
+
+.page-hero--light .page-hero-lead {
+  color: var(--tli-text-mid);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  opacity: 1;
+  max-width: var(--content-readable);
+}
+
+.page-hero--light .page-eyebrow {
+  background: var(--tli-gold-light);
+  color: var(--tli-green);
+  border-color: rgba(212, 164, 55, 0.35);
 }
 
 .page-hero .hero-actions {

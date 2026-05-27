@@ -1,33 +1,8 @@
 /* Services page */
 
-.page-hero--light {
-  background: var(--tli-bg-secondary);
-  color: var(--tli-text-dark);
-}
-
-.page-hero--light h1 {
-  color: var(--tli-green);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-.page-hero--light .page-hero-lead {
-  color: var(--tli-text-mid);
-  max-width: 44rem;
-  font-size: 1.0625rem;
-  line-height: 1.65;
-  margin: 0;
-}
-
-.page-hero--light .page-eyebrow {
-  background: var(--tli-gold-light);
-  color: var(--tli-green);
-  border-color: rgba(212, 164, 55, 0.35);
-}
-
 .services-stack {
-  max-width: 44rem;
   display: grid;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .service-section h2 {
@@ -40,6 +15,7 @@
   color: var(--tli-text-mid);
   font-size: 1rem;
   line-height: 1.75;
+  max-width: var(--content-readable);
 }
 
 .service-section ul {
@@ -47,6 +23,7 @@
   padding-left: 1.25rem;
   color: var(--tli-text-mid);
   line-height: 1.7;
+  max-width: var(--content-readable);
 }
 
 .service-section li + li {
@@ -54,9 +31,7 @@
 }
 
 .services-close {
-  max-width: 40rem;
-  text-align: center;
-  margin: 0 auto;
+  max-width: var(--content-readable);
 }
 
 .services-close h2 {
