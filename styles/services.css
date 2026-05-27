@@ -2,45 +2,40 @@
 
 .services-stack {
   display: grid;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .service-section h2 {
   color: var(--tli-green);
   font-size: 1.25rem;
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
 }
 
 .service-section p {
   color: var(--tli-text-mid);
   font-size: 1rem;
   line-height: 1.75;
-  max-width: var(--content-readable);
+  margin-bottom: 1rem;
 }
 
 .service-section ul {
-  margin: 12px 0 16px;
+  margin: 0.75rem 0 1.25rem;
   padding-left: 1.25rem;
   color: var(--tli-text-mid);
-  line-height: 1.7;
-  max-width: var(--content-readable);
+  line-height: 1.75;
 }
 
 .service-section li + li {
-  margin-top: 6px;
-}
-
-.services-close {
-  max-width: var(--content-readable);
+  margin-top: 0.5rem;
 }
 
 .services-close h2 {
   color: var(--tli-green);
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
 }
 
 .services-close p {
   color: var(--tli-text-mid);
   line-height: 1.75;
-  margin-bottom: 24px;
+  margin-bottom: 1.75rem;
 }

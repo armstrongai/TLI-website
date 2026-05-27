@@ -16,7 +16,8 @@
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--section-pad-x-mobile);
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,11 +28,7 @@
 
 @media (min-width: 960px) {
   .nav-inner {
-    padding: 0 var(--section-pad-x);
-    display: flex;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
     gap: 1.5rem;
   }
 }

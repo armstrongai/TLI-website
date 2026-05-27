@@ -19,9 +19,9 @@
 
 .evaled-intro p {
   color: var(--tli-text-mid);
-  line-height: 1.75;
-  margin-top: 24px;
-  max-width: var(--content-readable);
+  line-height: 1.8;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .evaled-feature-img {
@@ -38,27 +38,25 @@
 }
 
 .highlight-list--bullets {
-  margin: 0 0 28px;
+  margin: 0 0 2rem;
   padding-left: 1.25rem;
   color: var(--tli-text-mid);
   line-height: 1.75;
-  max-width: var(--content-readable);
 }
 
 .highlight-list--bullets li + li {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .highlight-gallery {
   display: grid;
-  gap: 16px;
-  margin-top: 24px;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 640px) {
   .highlight-gallery {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 720px;
   }
 }
 
@@ -72,8 +70,7 @@
 
 .section-intro {
   color: var(--tli-text-mid);
-  margin-bottom: 12px;
-  max-width: var(--content-readable);
+  margin-bottom: 1rem;
 }
 
 .attendee-grid {
@@ -81,12 +78,13 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 @media (min-width: 640px) {
   .attendee-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
@@ -97,7 +95,7 @@
 }
 
 .attendee-grid li {
-  padding: 16px 18px;
+  padding: 1rem 1.125rem;
   background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-sm);
@@ -108,15 +106,14 @@
 
 .vision-block p {
   color: var(--tli-text-mid);
-  line-height: 1.75;
-  max-width: var(--content-readable);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
 }
 
 .evaled-stay p {
   color: var(--tli-text-mid);
-  line-height: 1.75;
-  margin-bottom: 24px;
-  max-width: var(--content-readable);
+  line-height: 1.8;
+  margin-bottom: 1.75rem;
 }
 
 .evaled-stay h2 {

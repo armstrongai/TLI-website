@@ -7,10 +7,6 @@
   line-height: 1.6;
 }
 
-.contact-hero {
-  padding-bottom: 40px;
-}
-
 .contact-email-line {
   margin: 16px 0 0;
   font-size: 1rem;
@@ -27,14 +23,14 @@
 }
 
 .contact-layout {
-  max-width: 520px;
+  max-width: 36rem;
 }
 
 .contact-form-panel {
   background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-card);
-  padding: 32px 28px;
+  padding: 2rem 1.75rem;
   box-shadow: 0 8px 28px rgba(11, 79, 51, 0.05);
 }
 

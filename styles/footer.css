@@ -3,8 +3,8 @@
 .site-footer {
   background: var(--tli-green);
   color: rgba(255, 255, 255, 0.92);
-  padding-top: 56px;
-  padding-bottom: 28px;
+  padding-top: clamp(3rem, 6vh, 5rem);
+  padding-bottom: clamp(1.5rem, 4vh, 2.5rem);
 }
 
 .site-footer a {

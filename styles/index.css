@@ -3,16 +3,15 @@
 .hero--home {
   background: linear-gradient(180deg, var(--tli-green) 0%, var(--tli-green-dark) 100%);
   color: var(--tli-white);
-  padding: 48px 0 72px;
 }
 
 .hero-home-inner {
-  max-width: var(--content-readable);
+  max-width: 36rem;
 }
 
 .hero-logo {
   display: inline-block;
-  margin-bottom: 28px;
+  margin-bottom: 2rem;
 }
 
 .hero-logo img {
@@ -35,14 +34,14 @@
   color: var(--tli-white);
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   line-height: 1.25;
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
 }
 
 .hero-lead {
   font-size: clamp(1.125rem, 2.5vw, 1.35rem);
   font-weight: 500;
   color: var(--tli-gold);
-  margin: 0 0 24px;
+  margin: 0 0 1.75rem;
   line-height: 1.4;
 }
 
@@ -54,8 +53,8 @@
 
 .offer-grid {
   display: grid;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 640px) {
@@ -68,7 +67,7 @@
   background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-card);
-  padding: 24px;
+  padding: 1.75rem 1.5rem;
 }
 
 .offer-card h3 {
