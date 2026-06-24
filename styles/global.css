@@ -1,17 +1,17 @@
 /* The Learning Index: global brand system & shared components */
 
 :root {
-  --tli-green: #0b4f33;
-  --tli-gold: #d4a437;
+  --tli-green: #14452f;
+  --tli-gold: #ca902c;
   --tli-white: #ffffff;
-  --tli-green-dark: #094428;
-  --tli-green-light: #0d6644;
-  --tli-gold-light: rgba(212, 164, 55, 0.15);
+  --tli-green-dark: #0f3628;
+  --tli-green-light: #1a5c45;
+  --tli-gold-light: rgba(202, 144, 44, 0.15);
   --tli-text-dark: #1f1f1f;
   --tli-text-mid: #4a4a4a;
   --tli-text-light: #737373;
   --tli-border: rgba(0, 0, 0, 0.08);
-  --tli-bg-secondary: #f5f5f3;
+  --tli-bg-secondary: #ffffff;
   --font-sora: "Sora", system-ui, -apple-system, sans-serif;
   --max-width: 1200px;
   --container-padding-x: clamp(1.5rem, 6vw, 100px);
@@ -185,8 +185,8 @@ small {
 }
 
 .btn--primary:hover {
-  background: #e0b84a;
-  border-color: #e0b84a;
+  background: #d9a23e;
+  border-color: #d9a23e;
   color: var(--tli-green-dark);
 }
 
@@ -330,7 +330,7 @@ small {
 }
 
 .page-hero--light {
-  background: var(--tli-bg-secondary);
+  background: var(--tli-white);
   color: var(--tli-text-dark);
   text-align: left;
 }

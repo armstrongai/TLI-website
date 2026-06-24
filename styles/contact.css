@@ -23,15 +23,17 @@
 }
 
 .contact-layout {
-  max-width: 36rem;
+  width: 100%;
 }
 
 .contact-form-panel {
+  width: 100%;
+  max-width: 42rem;
   background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-card);
   padding: 2rem 1.75rem;
-  box-shadow: 0 8px 28px rgba(11, 79, 51, 0.05);
+  box-shadow: 0 8px 28px rgba(20, 69, 47, 0.06);
 }
 
 .contact-form .form-field label {

@@ -39,7 +39,7 @@
 .product-trial-cta {
   margin-top: 3rem;
   padding: 2rem 1.75rem;
-  background: var(--tli-bg-secondary);
+  background: var(--tli-white);
   border: 1px solid var(--tli-border);
   border-radius: var(--radius-card);
 }

@@ -1,12 +1,12 @@
 /**
- * Site configuration — set your Flodesk form embed UID from Flodesk → Forms → Embed
- * Example: window.TLI_CONFIG = { flodeskFormUid: "abc123def456" };
+ * Site configuration — optional Flodesk form UID (Forms → Embed in Flodesk).
+ * Social links are set in partials/footer.html; override here if needed.
  */
 window.TLI_CONFIG = window.TLI_CONFIG || {
   flodeskFormUid: "",
   social: {
-    linkedin: "",
-    instagram: "",
-    facebook: "",
+    facebook: "https://www.facebook.com/TheLearningIndex",
+    instagram: "https://www.instagram.com/thelearningindex/",
+    linkedin: "https://www.linkedin.com/company/the-learning-index",
   },
 };

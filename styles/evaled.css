@@ -60,6 +60,13 @@
   }
 }
 
+@media (min-width: 960px) {
+  .highlight-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 .highlight-gallery img {
   width: 100%;
   height: auto;

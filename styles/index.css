@@ -10,24 +10,12 @@
   width: 100%;
 }
 
-.hero-logo {
-  display: block;
-  margin-bottom: 2.5rem;
-  line-height: 0;
-}
-
-.hero-logo img {
-  width: min(320px, 85vw);
-  height: auto;
-  mix-blend-mode: screen;
-}
-
 .hero-eyebrow {
   display: inline-block;
   margin-bottom: 16px;
   color: var(--tli-gold);
-  background: rgba(212, 164, 55, 0.15);
-  border: 1px solid rgba(212, 164, 55, 0.35);
+  background: rgba(202, 144, 44, 0.15);
+  border: 1px solid rgba(202, 144, 44, 0.35);
   padding: 6px 14px;
   border-radius: var(--radius-pill);
 }

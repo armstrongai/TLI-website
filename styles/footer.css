@@ -33,19 +33,6 @@
   }
 }
 
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.footer-logo img {
-  width: auto;
-  max-width: 200px;
-  max-height: 56px;
-  object-fit: contain;
-  mix-blend-mode: screen;
-}
-
 .footer-blurb {
   font-size: 14px;
   line-height: 1.75;
